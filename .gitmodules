@@ -1,0 +1,9 @@
+[submodule "src/roselito_gazebo"]
+	path = src/roselito_gazebo
+	url = git@github.com:ros2amr/roselito_gazebo.git
+[submodule "src/ros_commons"]
+	path = src/ros_commons
+	url = git@github.com:ros2amr/ros_commons.git
+[submodule "src/roselito_description"]
+	path = src/roselito_description
+	url = git@github.com:ros2amr/roselito_description.git
