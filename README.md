@@ -32,11 +32,17 @@ To build the workspace, `cd` into its root folder and enter:
 
     ./scripts/make.sh
 
+During development, it may useful to use the `--symlink-install` option to create symbolic links (symlinks) to your source code files in the install directory instead of copying them:
+
+    ./scripts/make.sh --symlink-install
+
+This allows launch scripts, configuration files etc. to be updated without rebuilding the workspace.
+
 If needed, the current build can be erased with:
 
     ./scripts/make_clean.sh
 
-Then source the workspace with:
+In any case, after he workspace is built it has to be sourced so that packages are visible to the ROS tools. This can be done with:
 
     source ./scripts/setup.bash
 
@@ -48,4 +54,4 @@ The command above will start Gazebo, load a world and place a robot inside it. T
 
     rqt
 
-Then load the _Robot Steering_ pluging and set its topic to`/cmd_vel`.
+Then load the _Robot Steering_ plugin and set its topic to`/cmd_vel`.
