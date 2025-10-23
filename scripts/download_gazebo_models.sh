@@ -24,4 +24,5 @@ find . -name '*.tar.gz' | xargs rm
 # Turn the download folder into the Gazebo models folder, deleting the pre-existing folder if needed.
 cd ..
 rm -fr "$HOME/.gazebo/models"
+mkdir -p "$HOME/.gazebo"
 mv "models.gazebosim.org" "$HOME/.gazebo/models"
